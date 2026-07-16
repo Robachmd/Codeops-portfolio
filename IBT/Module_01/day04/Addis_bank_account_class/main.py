@@ -3,7 +3,7 @@ class Account:
         self.owner= owner
         self.account_number = account_number
         self.__private_balance = private_balance
-    # @property
+    @property
     def balance(self):
         return self.__private_balance 
     def deposit(self,amount):
