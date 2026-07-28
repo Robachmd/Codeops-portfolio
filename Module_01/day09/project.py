@@ -41,6 +41,8 @@ class Account:
             obs.update(event)
             
     def undo_last(self):
+        if self.history ==0:
+            return 0
         return f"this is your last_transaction or undo {self.history.pop()}"
             
     def total_transactions(self, history):
@@ -70,7 +72,7 @@ class SavingAccount(Account):
         
     def statement(self):
         message= f"this transaction happen from your account type : - {self.account_type}"
-        self.notify(message)
+        return self.notify(message)
 
 
 class CurrentAccount(Account):
@@ -91,7 +93,7 @@ class CurrentAccount(Account):
 
     def statement(self):
         message= f"this transaction happen from your account type : - {self.account_type}"
-        self.notify(message)
+        return self.notify(message)
 class AccountFactor:
     @staticmethod
     def create(kind,owner,account_number,private_balance,rate):
