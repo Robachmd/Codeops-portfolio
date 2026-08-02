@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethio-tele</title>
+</head>
+<body>
+    <h1>Ethio-telecom registration service</h1>
+    <label for="name">Name</label>
+    <input type="text" id="name">
+    <br>
+    <label for="email">Email</label>
+    <input type="email" id="email">
+    <br>
+    <label for="tel">Phone</label>
+    <input id="tel" name="tel" type="tel" pattern="\+251[0-9]{9}" required aria-describedby="tel-help">
+    <p id="tel-help">Format: +251 followed by 9 digits.</p>        
+    <br>
+    <label for="location">location</label>
+    <select name="location" id="location">
+        <option value="bole">Bole</option>
+        <option value="kazanchis">Kazanchis</option>
+        <option value="piassa">Piassa</option>
+    </select>
+    
+</body>
+</html>

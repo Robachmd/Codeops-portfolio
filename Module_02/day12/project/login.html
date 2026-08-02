@@ -28,10 +28,9 @@
         <input type="text" id="fname">
         <br>
         <br>
-        <label for="tele">Tel:</label>
-        <input type="tel" id="tele" pattern="09[0-9]{8}" title="Format: 0911223344"
-        required>
-        <br>
+        <label for="tel">Phone</label>
+        <input id="tel" name="tel" type="tel"pattern="\+251[0-9]{9}" required aria-describedby="tel-help">
+        <p id="tel-help">Format: +251 followed by 9 digits.</p>        
         <br>
         <label for="guest">Guest</label>
         <input type="number" id="guest" min="1" max="20">
