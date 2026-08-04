@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="..//practice/style.css">
+</head>
+<body>
+    <p class="paragraph" id="paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta aliquid corporis ad fugiat, modi officiis voluptates dicta iste deserunt delectus atque similique officia deleniti fugit, pariatur, sunt ut. Doloribus, quae?</p>
+
+    <table border="1">
+        <tr>
+            <th>Selector</th>
+            <th>Type</th>
+            <th>Specificity Score</th>
+            <th>Color</th>
+        </tr>
+        <tr>
+            <td>#paragraph</td>
+            <td>ID Selector</td>
+            <td>1,0,0</td>
+            <td>Green ✅ (Winner)</td>
+        </tr>
+        <tr>
+            <td>.paragraph</td>
+            <td>Class Selector</td>
+            <td>0,1,0</td>
+            <td>Blue</td>
+        </tr>
+        <tr>
+            <td>p</td>
+            <td>Element Selector</td>
+            <td>0,0,1</td>
+            <td>Red</td>
+        </tr>
+    </table>
+</body>
+</html>

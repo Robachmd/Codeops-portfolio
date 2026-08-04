@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+}
+:root{
+    --spacing:90px;
+    --font-stack: Arial, Helvetica, sans-serif;
+    --primary: #0d69c0;
+    --font-color: #D4AF37;
+}
+button{
+    background-color: var(--primary);
+    color: var(--font-color);
+    font-family: var(--font-stack);
+    border: 2px solid var(--font-color);
+    border-radius: 50px;
+    margin: 200px;
+    padding: 50px 100px;
+    font-size: var(--spacing);
+}
+.practice2{
+    width: 300px;
+    padding: 24px;
+    color: #0d69c0;
+    border: 2px solid;
+    border-color: #0d69c0;
+}
+#paragraph{
+    color: green;
+}
+p{
+    color: red;
+}
+.paragraph{
+    color: blue;
+}
+.color:nth-child(even){
+    color: var(--primary);
+}
