@@ -24,6 +24,7 @@ body{
     justify-content: flex-end;
     background-color: var(--background);
     align-items: center;
+    flex-wrap: wrap;
     gap: 10px;
     position: sticky;
     top: 0;
@@ -180,7 +181,7 @@ h1{
     height: 100%;
     object-fit:cover;
     background-size: contain;
-    object-position: top;
+    object-position: center;
     color: hsl(20%, 50%, 10%);
     box-shadow:0 5px 15px var(--text);
     animation: bannerZoom 8s ease-in-out infinite alternate;
@@ -243,6 +244,7 @@ h1{
     gap:10px;
     background-color: var(--primary); 
     box-shadow: var(--text);
+    padding: 20px;
 
 }
 
@@ -274,19 +276,16 @@ iframe {
     margin:0 auto;
 }
 
-.dish{
-    flex:0 0 280px;
-}
 
 .reserve{
     border: 1px solid var(--accent);
     background-color: var(--background);
     box-shadow:0 5px 8px var(--text);
     border-radius: 15px;
-    margin: 150px;
-    margin-left: 350px;
+    margin: 50px auto;
     padding: 20px;
-    width: 500px;
+    width: 90%;
+    max-width: 500px;
     height: auto;
 
 }
@@ -308,11 +307,19 @@ iframe {
 .foot{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
 
 
 }
+.foot h1 {
+    margin: 5px;
+}
 .foot a{
     color: var(--background);
+    font-size: 18px;
 
 }
 
@@ -354,10 +361,12 @@ iframe {
 .loginpage label{
     color: var(--accent);
 }
-.Login {
-    margin-left: 90px;
-    width: 250px;
+.loginpage button{
+    display: block;
+    width: 50%;
+    padding: 5px;
     height: 45px;
+    margin: 20px auto;
     background-color: var(--primary);
     color: var(--surface);
     border: none;
