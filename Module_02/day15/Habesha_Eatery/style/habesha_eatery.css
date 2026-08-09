@@ -85,6 +85,9 @@ body{
     border-top: 5px solid var(--border);
     transition: transform 300ms ease;
 }
+.dish .item{
+    color: var(--primary);
+}
 .dish:hover{
     transform: translateY(-8px); 
     transform:scale(1.05);
