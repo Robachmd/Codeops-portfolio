@@ -1,0 +1,42 @@
+name: Deploy Habesha Eatery
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "Module_02/day15/Habesha_Eatery/**"
+      - ".github/workflows/habesha-eatery.yml"
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Habesha Eatery
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: "Module_02/day15/Habesha_Eatery"
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
