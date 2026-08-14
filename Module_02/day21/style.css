@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+:root{
+    --primary: #B22222;
+    --accent: #D4AF37;
+    --background: #FFF8F5;
+    --surface: #FFFFFF;
+    --text: #333333;
+    --border: #D4AF37;
+}
+
+.signup{
+    background-color: var(--background);
+    border: 1px solid var(--border);
+    box-shadow: 3px 7px 5px 5px var(--text);
+    width: 400px;
+    height: auto;
+    margin: 150px;
+    margin-left: 300px;
+    padding: 30px;
+    text-align: center;
+    color: var(--primary);
+}
+#error_area {
+    margin-top: 10px;
+    text-align: center;
+    color: var(--primary);
+}
+
+.counter-box {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.total {
+    display: inline;
+}
+
+#display_count {
+    margin-left: 5px;
+}
