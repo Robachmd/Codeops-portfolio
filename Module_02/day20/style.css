@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+:root{
+    --primary: #B22222;
+    --accent: #D4AF37;
+    --background: #FFF8F5;
+    --surface: #FFFFFF;
+    --text: #333333;
+    --border: #D4AF37;
+}
+
+h1{
+    text-align: center;
+}
+button{
+    padding: 10px 18px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+ul{
+    padding: 0;
+}
+li{
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+}

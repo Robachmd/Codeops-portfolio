@@ -1,0 +1,32 @@
+[
+    {
+    "id": 1,
+    "name": "Doro Wat",
+    "price": 240
+    },
+    {
+    "id": 2,
+    "name": "Tibs",
+    "price": 200
+    },
+    {
+    "id": 3,
+    "name": "Shiro",
+    "price": 120
+    },
+    {
+    "id": 4,
+    "name": "Kitfo",
+    "price": 300
+    },
+    {
+    "id": 5,
+    "name": "Firfir",
+    "price": 150
+    },
+    {
+    "id": 6,
+    "name": "Beyaynet",
+    "price": 180
+    }
+]
