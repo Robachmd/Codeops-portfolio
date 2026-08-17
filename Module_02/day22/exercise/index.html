@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Currency Converter</h1>
+    
+        <p id="status"></p>
+    
+        <div class="app-content">
+    
+            <div class="converter-section">
+    
+                <form id="converterForm">
+    
+                    <div class="form-group">
+                        <label for="amount">Amount</label>
+                        <input
+                            type="number"
+                            placeholder="Enter amount"
+                            id="amount"
+                        >
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="fromCurrency">From</label>
+                        <select id="fromCurrency"></select>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="toCurrency">To</label>
+                        <select id="toCurrency"></select>
+                    </div>
+    
+                    <button type="submit">Convert</button>
+    
+                </form>
+    
+                <section class="result-section">
+                    <h2>Result</h2>
+                    <p id="result"></p>
+                </section>
+    
+            </div>
+    
+            <section class="watchlist-section">
+                <h2>My Watchlist</h2>
+                <ul id="watchlist"></ul>
+            </section>
+    
+        </div>
+    
+    </div>
+    <script src="app.js"></script>
+
+</body>
+</html>
