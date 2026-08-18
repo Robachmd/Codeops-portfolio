@@ -389,3 +389,11 @@ iframe {
     margin-top: 50px;
 
 }
+#search{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    color: var(--primary);
+    padding-right: 200px;
+    
+}
