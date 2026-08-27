@@ -1,0 +1,21 @@
+.dish {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .dish img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .dish h3 {
+    padding: 10px 10px 5px;
+  }
+  
+  .dish p {
+    padding: 0 10px 10px;
+  }
