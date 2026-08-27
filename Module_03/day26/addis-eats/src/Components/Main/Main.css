@@ -8,12 +8,6 @@
     --border: #D4AF37;
     
 }
-.main {
-    display: grid;
-    grid-template-columns: 300px 1fr;
-    gap: 20px;
-    padding: 20px;
-  }
   
   .sidebar {
     background-color: var(--primary);
@@ -22,12 +16,6 @@
     height: auto;
   }
   
-  .dish-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-  }
-
 .menu h1 {
     text-align: center;
     margin-bottom: 40px;
@@ -35,4 +23,18 @@
   }
 .dish p,h3{
     color: var(--primary)
+}
+@media (min-width: 768px) {
+  .main {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 20px;
+    padding: 20px;
+  }
+  .dish-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+    gap: 20px;
+  }
+
 }

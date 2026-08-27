@@ -87,7 +87,7 @@ const dishes = [
     id: 15,
     name: "Kocho",
     price: 60,
-    image: "/images/kocho.jpg"
+    image: "/images/Kocho.jpg"
   },
   {
     id: 16,
@@ -99,7 +99,7 @@ const dishes = [
     id: 17,
     name: "Fuul",
     price: 90,
-    image: "/images/fuul.jpg"
+    image: "/images/Fuul.jpg"
   },
   {
     id: 18,

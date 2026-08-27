@@ -16,10 +16,13 @@
 body{
   background-color: var(--background);
 }
-.app{
-  width: 100%;
-  min-height: 100vh;
-  display: grid;
-  grid-template-rows:auto 1fr auto;
-
+@media (max-width: 768px) {
+  .app{
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows:auto 1fr auto;
+  
+  }
+  
 }
