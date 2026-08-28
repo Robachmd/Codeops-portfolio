@@ -1,0 +1,28 @@
+
+:root {
+    --primary: #B22222;
+    --accent: #D4AF37;
+    --background: #FFF8F5;
+    --surface: #FFFFFF;
+    --text: #333333;
+    --border: #D4AF37;
+    
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: var(--background);
+}
+@media (max-width: 768px) {
+  .app{
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows:auto 1fr auto;
+  
+  }
+  
+}
