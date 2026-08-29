@@ -1,0 +1,33 @@
+.category-filter {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .category-filter-title {
+    margin: 0 0 10px;
+    color: #b22222;
+    font-weight: bold;
+    font-size: x-large;
+  }
+  
+  .category-filter-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  
+  .category-filter-button {
+    padding: 8px 18px;
+    border: none;
+    border-radius: 20px;
+    background: #666;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .category-filter-button.active {
+    background: #b22222;
+  }

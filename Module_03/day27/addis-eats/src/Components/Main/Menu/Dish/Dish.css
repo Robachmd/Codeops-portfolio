@@ -25,14 +25,41 @@
 }
 
 .category {
-  margin: 0;
+  margin: 10;
 }
 
 .spicy-badge {
-  margin: 0;
+  margin: 10;
+  background-color: rgb(140, 7, 7);
+  padding: 6px;
+  border-radius: 5px;
+  color: white;
 }
 
 .dish p {
   padding: 0 10px 10px;
   margin: 10px 0 0;
+}
+.order-button {
+  background-color: #d6a800;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+}
+.count {
+  margin: 10px;
+  font-weight: bold;
+  background-color: #7d0202;
+  color: white;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  padding: 8px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
 }
