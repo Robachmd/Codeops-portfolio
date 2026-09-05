@@ -1,18 +1,14 @@
-import { useState } from "react";
 import SideBar from "./SideBar/SideBar";
 import Menu from "./Menu/Menu";
-import './Main.css'
-function Main() {
-  const [total, setTotal] = useState(0);
 
-  function handleAdd(price) {
-    setTotal((prevTotal) => prevTotal + price);
-  }
+import "./Main.css";
 
+function Main({ search }) {
   return (
     <main className="main">
-      <SideBar total={total} />
-      <Menu onAdd={handleAdd} />
+      <SideBar />
+
+      <Menu search={search} />
     </main>
   );
 }

@@ -1,6 +1,22 @@
 .footer {
-    background-color: #222;
-    color: white;
-    text-align: center;
-    padding: 20px;
-  }
+  width: 100%;
+
+  margin-top: 40px;
+  padding: 30px;
+
+  background: var(--primary);
+  color: var(--surface);
+
+  text-align: center;
+
+  border-top: 4px solid var(--accent);
+}
+
+.footer h2 {
+  margin-top: 0;
+  color: var(--accent);
+}
+
+.footer p {
+  color: var(--surface);
+}

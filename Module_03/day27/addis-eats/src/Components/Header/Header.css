@@ -1,10 +1,74 @@
 .header {
-    background-color: #1f4f8f;
-    color: white;
-    text-align: center;
-    padding: 25px;
+  width: 100%;
+  background: var(--primary);
+  color: var(--surface);
+  border-bottom: 4px solid var(--accent);
+}
+
+.header-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px 30px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo h1 {
+  margin: 0;
+  color: var(--surface);
+}
+
+.logo p {
+  margin: 5px 0 0;
+  color: var(--surface);
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-actions input {
+  padding: 10px 12px;
+  border: 2px solid var(--accent);
+  border-radius: 6px;
+  width: 200px;
+  outline: none;
+}
+
+.header-actions input:focus {
+  border-color: var(--surface);
+}
+
+.header-actions button {
+  padding: 10px 15px;
+  border: 2px solid var(--accent);
+  border-radius: 6px;
+  background: var(--accent);
+  color: var(--text);
+  font-weight: bold;
+}
+
+.cart-badge {
+  background: var(--accent);
+  color: var(--text);
+  padding: 10px 14px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+@media (max-width: 700px) {
+  .header-content {
+    flex-direction: column;
   }
-  
-  .header h1 {
-    margin-bottom: 5px;
+
+  .header-actions {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
   }
+}

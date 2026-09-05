@@ -1,37 +1,65 @@
-import './Dish.css';
-import {useState} from 'react';
+import { useState } from "react";
 import PropTypes from "prop-types";
-const Dish = ({ name, price, image, spicy,category,currency="ETB",onAdd }) => {
-    function handleClick() {
-        setCount((prevCount) => prevCount + 1);
-        onAdd(price);
-        console.log(`Added ${name} to cart`);
-    }
-    const [count, setCount] = useState(0);
 
+import { useCart } from "../../../../Context/CartContext";
 
-    return (
-        <div className="dish">
-            <img src={image} alt={name} />
-            <h3>{name}</h3>
-            <div className="dish-info">
-            <h4 className='category'>{category}</h4>
-            {spicy && <span className='spicy-badge'>Spicy</span>}
-            </div>
-            <p>{price} {currency}</p>
-            <button onClick={handleClick} className="order-button">Add to cart </button><span className="count">{count}</span>
-            
-        </div>
-    
-)}
+import "./Dish.css";
 
-Dish.propTypes={
+function Dish({ dish }) {
+  const [count, setCount] = useState(0);
+  const { addToCart } = useCart();
+  function handleClick() {
+    setCount((prevCount) => prevCount + 1);
+    addToCart(dish);
+  }
+
+  return (
+    <div className="dish">
+      <img
+        src={dish.image}
+        alt={dish.name}
+      />
+      <h3>{dish.name}</h3>
+      <div className="dish-info">
+        <h4 className="category">
+          {dish.category}
+        </h4>
+
+        {dish.spicy && (
+          <span className="spicy-badge">
+            Spicy
+          </span>
+        )}
+      </div>
+
+      <p>
+        {dish.price} ETB
+      </p>
+
+      <div className="dish-action">
+        <button
+          onClick={handleClick} className="order-button"
+        >
+          Add to cart
+        </button>
+
+        <span className="count">
+          {count}
+        </span>
+      </div>
+    </div>
+  );
+}
+
+Dish.propTypes = {
+  dish: PropTypes.shape({
+    id: PropTypes.number.isRequired,
     name: PropTypes.string.isRequired,
     price: PropTypes.number.isRequired,
     image: PropTypes.string.isRequired,
     spicy: PropTypes.bool,
     category: PropTypes.string.isRequired,
-    currency: PropTypes.string
-}
+  }).isRequired,
+};
 
 export default Dish;

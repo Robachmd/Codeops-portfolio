@@ -1,24 +1,22 @@
-
-:root {
-    --primary: #B22222;
-    --accent: #D4AF37;
-    --background: #FFF8F5;
-    --surface: #FFFFFF;
-    --text: #333333;
-    --border: #D4AF37;
-    
-}
-  
 .main {
-  display: grid;
-  grid-template-columns: 280px 1fr;
-  gap: 30px;
+  width: 100%;
+  max-width: 1400px;
+
+  margin: 0 auto;
   padding: 30px;
-  align-items: start;
+
+  display: grid;
+  grid-template-columns: 320px 1fr;
+
+  gap: 30px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .main {
     grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    position: static;
   }
 }

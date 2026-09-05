@@ -7,27 +7,42 @@ function DeliveryForm() {
     area: "",
   });
 
-  const phoneRegex = /^(\+2519|\+2517|09|07)\d{8}$/;
+  const phoneRegex =
+    /^(\+2519|\+2517|09|07)\d{8}$/;
 
   function handleChange(event) {
-    const { name, value } = event.target;
+    const { name, value, } = event.target;
 
-    setFormData((prevData) => ({ ...prevData,[name]: value, }));
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
   }
 
-  const isPhoneValid = phoneRegex.test(formData.phone);
+  const isPhoneValid =
+    phoneRegex.test(formData.phone);
 
-  const isFormValid =
-    formData.name.trim() !== "" &&
-    isPhoneValid &&
-    formData.area.trim() !== "";
+  const isFormValid = formData.name.trim() !== "" && isPhoneValid && formData.area.trim() !== "";
 
   function handleSubmit(event) {
     event.preventDefault();
 
-    if (!isFormValid) return;
+    if (!isFormValid) {
+      return;
+    }
 
-    console.log("Delivery information:", formData);
+    console.log(
+      "Delivery information:",
+      formData
+    );
+
+    alert("Order placed successfully!");
+
+    setFormData({
+      name: "",
+      phone: "",
+      area: "",
+    });
   }
 
   return (

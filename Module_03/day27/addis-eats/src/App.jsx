@@ -1,13 +1,26 @@
-import Header from "../../../day27/addis-eats/src/Components/Header/Header";
-import Main from "../../../day27/addis-eats/src/Components/Main/Main";
-import Footer from "../../../day27/addis-eats/src/Components/Footer/Footer";
+import { useState } from "react";
+
+import Header from "./Components/Header/Header";
+import Main from "./Components/Main/Main";
+import Footer from "./Components/Footer/Footer";
+
 import "./App.css";
+
 function App() {
+  const [search, setSearch] = useState("");
+
   return (
     <div className="app">
-      <Header />
-      <Main />
+
+      <Header
+        search={search}
+        setSearch={setSearch}
+      />
+
+      <Main search={search} />
+
       <Footer />
+
     </div>
   );
 }
